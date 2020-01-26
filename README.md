@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align="center">CRM System</h1>
+    <h1 align="center">CRM system</h1>
     <br>
 </p>
 
