@@ -16,7 +16,7 @@ $this->title = 'Система учета клиентов';
     <div class="jumbotron">
 <!--         <h1>Congratulations!</h1> -->
 
-        <p class="lead">Информационная система учета клиентов для компании Брок-Инвест</p>
+        <p class="lead"></p>
 
 <!--         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p> -->
     </div>
