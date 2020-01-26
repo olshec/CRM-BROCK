@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align="center">CRM проект</h1>
+    <h1 align="center">CRM System</h1>
     <br>
 </p>
 
@@ -29,29 +29,6 @@ The minimum requirement by this project template that your Web server supports P
 ### Access
 
 You can then access the application through the following URL:
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
 
 
 TESTING
