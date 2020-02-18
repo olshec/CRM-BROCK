@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'О системе';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
@@ -14,5 +14,5 @@ $this->params['breadcrumbs'][] = $this->title;
         Система учета.
     </p>
 
-    <code><?= __FILE__ ?></code>
+    <!-- <code><?= __FILE__ ?></code> -->
 </div>
