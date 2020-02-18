@@ -25,31 +25,31 @@ $this->title = 'Система учета клиентов';
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Location</h2>
-                    <?= Html::a('City', ['/city'],  ['class' => ['btn', 'btn-primary']]) ?>
+                <h2>Локация</h2>
+                    <?= Html::a('Города', ['/city'],  ['class' => ['btn', 'btn-primary']]) ?>
                     <br><br>
-                    <?= Html::a('Country', ['/country'],  ['class' => ['btn', 'btn-primary']] ) ?>
+                    <?= Html::a('Страны', ['/country'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
 <!--                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p> -->
             </div>
             
             <div class="col-lg-4">
-                <h2>Details</h2>
-               		<?= Html::a('Detail', ['/detail'],  ['class' => ['btn', 'btn-primary']] ) ?>
+                <h2>Детали</h2>
+               		<?= Html::a('Детали', ['/detail'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
-                    <?= Html::a('Type of detail', ['/type-detail'],  ['class' => ['btn', 'btn-primary']] ) ?>
+                    <?= Html::a('Виды деталей', ['/type-detail'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
 
 <!--                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p> -->
             </div>
             
             <div class="col-lg-4">
-                <h2>Deliveries</h2>
-                    <?= Html::a('Distributer', ['/distributer'],  ['class' => ['btn', 'btn-primary']] ) ?>
+                <h2>Поставка</h2>
+                    <?= Html::a('Поставщики', ['/distributer'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
-                    <?= Html::a('Customer', ['/customers'],  ['class' => ['btn', 'btn-primary']] ) ?>
+                    <?= Html::a('Клиенты', ['/customers'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
-                    <?= Html::a('Order', ['/order'],  ['class' => ['btn', 'btn-primary']] ) ?>
+                    <?= Html::a('Заказы', ['/order'],  ['class' => ['btn', 'btn-primary']] ) ?>
             </div>
             
             

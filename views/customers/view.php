@@ -12,6 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="customers-view">
+
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
@@ -19,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Удалить', ['delete', 'id' => $model->idCustomers], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Вы уверены что хотите удалить эту запись?',
+                'confirm' => 'Вы уверены что хотите удалить этот элемент?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -33,6 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'lastName',
             'idDocument',
             'City_idCity',
+            'date',
+            'theme',
+            'message:ntext',
+            'email:email',
+            'telephone',
         ],
     ]) ?>
 

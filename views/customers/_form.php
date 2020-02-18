@@ -18,11 +18,19 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'idDocument')->textInput(['maxlength' => true]) ?>
 
-
-    
     <?= $form->field($model, 'City_idCity')    
         ->dropDownList($model->getCity())
         ->label('Город') ?>
+
+    <?= $form->field($model, 'date')->textInput() ?>
+
+    <?= $form->field($model, 'theme')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'message')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'telephone')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

@@ -17,9 +17,8 @@ class CustomersSearch extends Customers
     public function rules()
     {
         return [
-            [['idCustomers'], 'integer'],
-            [['City_idCity'], 'string'],
-            [['firstName', 'lastName', 'idDocument'], 'safe'],
+            [['idCustomers', 'City_idCity'], 'integer'],
+            [['firstName', 'lastName', 'idDocument', 'date', 'theme', 'message', 'email', 'telephone'], 'safe'],
         ];
     }
 
@@ -60,7 +59,8 @@ class CustomersSearch extends Customers
         // grid filtering conditions
         $query->andFilterWhere([
             'idCustomers' => $this->idCustomers,
-            //'City_idCity' => $this->City_idCity,
+            'City_idCity' => $this->City_idCity,
+            'date' => $this->date,
         ]);
         
         //find city name
@@ -80,11 +80,14 @@ class CustomersSearch extends Customers
                 $query->andFilterWhere(['City_idCity' => -1]);
             }
         }
-        
 
         $query->andFilterWhere(['like', 'firstName', $this->firstName])
             ->andFilterWhere(['like', 'lastName', $this->lastName])
-            ->andFilterWhere(['like', 'idDocument', $this->idDocument]);
+            ->andFilterWhere(['like', 'idDocument', $this->idDocument])
+            ->andFilterWhere(['like', 'theme', $this->theme])
+            ->andFilterWhere(['like', 'message', $this->message])
+            ->andFilterWhere(['like', 'email', $this->email])
+            ->andFilterWhere(['like', 'telephone', $this->telephone]);
 
         return $dataProvider;
     }

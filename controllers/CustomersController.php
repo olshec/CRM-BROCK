@@ -7,10 +7,8 @@ use app\models\Customers;
 use app\models\CustomersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use app\models\City;
-
 /**
  * CustomersController implements the CRUD actions for Customers model.
  */
@@ -22,22 +20,6 @@ class CustomersController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['view', 'update', 'delete', 'create'],
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'actions' => ['view'],
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'allow' => true,
-                        'actions' => ['view', 'update', 'delete', 'create'],
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -45,10 +27,6 @@ class CustomersController extends Controller
                 ],
             ],
         ];
-
-        
-        
-        
     }
 
     /**
@@ -59,7 +37,7 @@ class CustomersController extends Controller
     {
         $searchModel = new CustomersSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        
         $models = $dataProvider->getModels();
         
         foreach ($models as $mod) {

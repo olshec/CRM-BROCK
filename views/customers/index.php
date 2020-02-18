@@ -31,6 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'lastName',
             'idDocument',
             'City_idCity',
+            'date',
+            'theme',
+            'message:ntext',
+            'email:email',
+            'telephone',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
