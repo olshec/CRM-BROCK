@@ -29,6 +29,8 @@ class ContactForm extends Model
             ['email', 'email'],
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
+
+            
         ];
     }
 
@@ -39,6 +41,9 @@ class ContactForm extends Model
     {
         return [
             'verifyCode' => 'Verification Code',
+            'name'       => 'Имя',
+            'subject'    => 'Тема',
+            'body'       => 'Сообщение',
         ];
     }
 
