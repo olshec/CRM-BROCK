@@ -43,7 +43,7 @@ class Country extends \yii\db\ActiveRecord
         return [
             'idCountry' => 'Id Country',
             'name' => 'Название',
-            'countPeople' => 'Население, млн',
+            'countPeople' => 'Население, тыс',
         ];
     }
 

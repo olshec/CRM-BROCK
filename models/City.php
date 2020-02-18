@@ -49,8 +49,8 @@ class City extends \yii\db\ActiveRecord
         return [
             'idCity' => 'Id City',
             'name' => 'Название',
-            'countPeople' => 'Население, млн',
-            'square' => 'Площадь',
+            'countPeople' => 'Население, тыс',
+            'square' => 'Площадь, км²',
             'Country_idCountry' => 'Страна',
         ];
     }

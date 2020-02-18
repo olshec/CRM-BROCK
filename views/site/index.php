@@ -25,7 +25,7 @@ $this->title = 'Система учета клиентов';
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Локация</h2>
+                <h2>&nbsp;&nbsp;Локация</h2>
                     <?= Html::a('Города', ['/city'],  ['class' => ['btn', 'btn-primary']]) ?>
                     <br><br>
                     <?= Html::a('Страны', ['/country'],  ['class' => ['btn', 'btn-primary']] ) ?>
@@ -34,7 +34,7 @@ $this->title = 'Система учета клиентов';
             </div>
             
             <div class="col-lg-4">
-                <h2>Детали</h2>
+                <h2>&nbsp;&nbsp;&nbsp;Детали</h2>
                		<?= Html::a('Детали', ['/detail'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
                     <?= Html::a('Виды деталей', ['/type-detail'],  ['class' => ['btn', 'btn-primary']] ) ?>
@@ -44,7 +44,7 @@ $this->title = 'Система учета клиентов';
             </div>
             
             <div class="col-lg-4">
-                <h2>Поставка</h2>
+                <h2>&nbsp;Поставка</h2>
                     <?= Html::a('Поставщики', ['/distributer'],  ['class' => ['btn', 'btn-primary']] ) ?>
                     <br><br>
                     <?= Html::a('Клиенты', ['/customers'],  ['class' => ['btn', 'btn-primary']] ) ?>
